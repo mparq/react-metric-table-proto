@@ -1,0 +1,19 @@
+.hover-switch-container:hover .hide-on-hover {
+    display:none;
+}
+
+.hover-switch-container .hide-on-hover {
+    display:initial;
+}
+
+.hover-switch-container:hover .show-on-hover {
+    display:initial;
+}
+
+.hover-switch-container .show-on-hover {
+    display:none;
+}
+
+#metric-table {
+    max-width: 1044px;
+}
