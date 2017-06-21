@@ -281,10 +281,10 @@ class Metric extends Component {
         );
         return (
             <div className="row">
-                <div className="col-sm-6">
+                <div className="col-sm-4">
                     {this.props.metric}
                 </div>
-                <div className="col-sm-6">
+                <div className="col-sm-8">
                     {metricTargetRows}
                 </div>
             </div>
@@ -316,10 +316,10 @@ function MetricTargetHeader(props) {
 function MetricHeader(props) {
     return (
         <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-4">
                 Metric Name
             </div> 
-            <div className="col-sm-6">
+            <div className="col-sm-8">
                 <MetricTargetHeader selectedReleases={props.selectedReleases} />
             </div>
         </div>
@@ -423,13 +423,13 @@ class MetricTable extends Component {
 function MetricTableControls(props) {
     return (
         <div className="row">
-            <div className="col-sm-6">
+            <div className="col-sm-4">
                 <PlatformDropdown
                     selectedPlatform={props.selectedPlatform}
                     platforms={props.platforms}
                     onPlatformSelected={props.onPlatformSelected} />
             </div>
-            <div className="col-sm-6">
+            <div className="col-sm-8">
                 <ReleaseDropdown
                     selectedReleases={props.selectedReleases}
                     releases={props.releases}
